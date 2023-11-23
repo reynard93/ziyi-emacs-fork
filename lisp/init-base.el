@@ -233,9 +233,9 @@
   '(auto-save-visited-predicate #'mk/auto-save-visited-predicate))
 
 ;;; Waketime ================================================
-(use-package wakatime-mode
-  :config
-  (global-wakatime-mode))
+;; (use-package wakatime-mode
+;;   :config
+;;   (global-wakatime-mode))
 
 ;;; Zoxide ==================================================
 (use-package zoxide)
@@ -244,7 +244,10 @@
 ;; @ make search and replace very easy (even for project)
 ;; notice: in replace: !, y, n is the keybindings to replace all, replace current and not replace current
 (use-package color-rg
-  :elpaca (:host github :repo "manateelazycat/color-rg"))
+  :elpaca (:host github :repo "manateelazycat/color-rg")
+  :custom
+  (color-rg-mac-load-path-from-shell nil)
+  )
 
 ;; @ fuzzy finder ;; use consult-ripgrep instead
 ;; (use-package affe

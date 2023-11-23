@@ -4,6 +4,8 @@
 
 (set-default-coding-systems 'utf-8)
 
+(add-to-list 'default-frame-alist '(undecorated-round . t))
+
 ;;; Disable package.el ======================================
 (setq package-enable-at-startup nil ;; disable package.el at startup
   package-quickstart nil) ;; don't load from package cache

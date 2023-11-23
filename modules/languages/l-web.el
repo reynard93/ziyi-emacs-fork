@@ -54,7 +54,7 @@ Due to web-mode bug for emacs client, some customizable values need to be set af
 
 ;; eglot server programs configuration
 (with-eval-after-load 'eglot
-  (add-to-list 'eglot-server-programs '(vue-mode . ("vls" "--stdio")))
+  (add-to-list 'eglot-server-programs '(vue-mode . ("vue-language-server" "--stdio")))
   (add-to-list 'eglot-server-programs
     '((typescript-ts-mode) "typescript-language-server" "--stdio")))
 

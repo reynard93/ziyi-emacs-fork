@@ -7,18 +7,18 @@
 ;; when meet key conflicts, please refer to evil-collection
 ;; https://github.com/emacs-evil/evil-collection
 ;; FIXME it seems that magit has performance issue
-;; (use-package magit
-;; 	:config
-;; 	(setq magit-status-buffer-switch-function #'switch-to-buffer)
-;; 	:custom
-;;   (magit-display-buffer-function #'magit-display-buffer-same-window-except-diff-v1))
+(use-package magit
+	:config
+	(setq magit-status-buffer-switch-function #'switch-to-buffer)
+	:custom
+  (magit-display-buffer-function #'magit-display-buffer-same-window-except-diff-v1))
 
 ;; @ Forge
 ;; Work with Git forges, such as Github and Gitlab, from the comfort of Magit and the rest of Emacs.
-;; (use-package forge 
-;;   :disabled)
+(use-package forge 
+  :disabled)
 
-;; (use-package magit-todos)
+(use-package magit-todos)
 
 ;;; Diff-hl =================================================
 (use-package diff-hl

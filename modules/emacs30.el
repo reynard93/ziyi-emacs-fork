@@ -48,10 +48,11 @@
   ;; Bindings that take effect when the preview is shown:
 
   ;; Cycle the completion candidate that the preview shows
-  (keymap-set completion-preview-active-mode-map "M-n" #'completion-preview-next-candidate)
-  (keymap-set completion-preview-active-mode-map "M-p" #'completion-preview-prev-candidate)
+  ;; (keymap-set completion-preview-active-mode-map "M-n" #'completion-preview-next-candidate)
+  ;; (keymap-set completion-preview-active-mode-map "M-p" #'completion-preview-prev-candidate)
   ;; Convenient alternative to C-i after typing one of the above (TAB does the same thing)
-  (keymap-set completion-preview-active-mode-map "M-i" #'completion-preview-insert))
+  ;; (keymap-set completion-preview-active-mode-map "M-i" #'completion-preview-insert)
+  )
 
 
 (provide 'emacs30)

@@ -3,7 +3,10 @@
 ;; customization for dired
 ;;; Code:
 
+;;; for MacOS i need to install coreutils first
+
 (setq dired-listing-switches "-agho --group-directories-first"
+  insert-directory-program "gls" dired-use-ls-dired t
   dired-hide-details-hide-symlink-targets nil
   dired-kill-when-opening-new-dired-buffer t
   delete-by-moving-to-trash t)

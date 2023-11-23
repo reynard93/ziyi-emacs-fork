@@ -95,6 +95,7 @@
   (require 'adbkeyboard)
   (require 'emacs-developer)
   (require 'hugo)
+  (require 'completion-preview)
   (require 'emacs30))
 
 ;; load language
@@ -106,16 +107,16 @@
   (require 'l-rust)
   (require 'l-cc)
   (require 'l-java)
-  (require 'l-zig)
-  (require 'l-latex)
-  (require 'l-shell)
-  (require 'l-draw)
-  (require 'l-makefile)
-  (require 'l-python)
-  (require 'l-kotlin)
-  (require 'l-lua)
-  (require 'l-typst)
-  (require 'l-general)) ;; l-general must loaded after l-rust
+  ;; (require 'l-zig)
+  ;; (require 'l-latex)
+  ;; (require 'l-shell)
+  ;; (require 'l-draw)
+  ;; (require 'l-makefile)
+  ;; (require 'l-kotlin)
+  ;; (require 'l-lua)
+  ;; (require 'l-typst)
+  ;; (require 'l-general)
+) ;; l-general must loaded after l-rust
 
 ;; remove old version native-compiled files in the end
 (use-package comp

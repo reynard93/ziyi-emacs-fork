@@ -126,7 +126,6 @@ Example:
   ;; C-M- (SPC g) ===============================================================
   (keymap-global-set "C-M-l" #'recenter-top-bottom) ;; gl
   (keymap-global-set "C-M-s" #'scratch-buffer)      ;; gs
-  (keymap-global-set "C-M-g" #'mk/project-git)      ;; gg
 
   ;; buffer(b)
   (mk/define&set-keymap
@@ -685,15 +684,6 @@ ARG: prefix argument."
     (if symbol-bounds
       (delete-region (car symbol-bounds) (cdr symbol-bounds))
       (message "No symbol at point."))))
-
-(defun mk/project-git()
-  "Open gitui at project root.(Due to magit's poor performance)"
-  (interactive)
-  (let ((command-prefix "kitty --class fullscreen -d ")) ;; right parenthesis is needed to be added after concatance
-    (if (project-current)
-      (start-process-shell-command "open terminal" "*terminal*"
-        (concat command-prefix (project-root (project-current)) " ~/.emacs.d/gitui_start.sh"))
-      (message "Not in a project!"))))
 
 (defun mk/better-consult-ripgrep (arg)
   "Use symbol at point as the default input of `affe-grep'.
